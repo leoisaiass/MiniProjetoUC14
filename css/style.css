@@ -1,3 +1,9 @@
 header {
-  font-size: 100pt;
+  /* font-size: 100pt; */
+  /* background-color: greenyellow; */
+}
+
+#imghome img {
+  width: 40%;
+  height: auto;
 }
