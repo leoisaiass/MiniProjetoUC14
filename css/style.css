@@ -1,6 +1,69 @@
+/* Página como um todo */
+* {
+  margin: 0px; /*Margem externa das caixas*/
+  padding: 0px; /*Margem interna das caixas*/
+  box-sizing: border-box; /* Ajuste de padding das caixas sem a asoma com a largura*/
+}
+
+/* Formatação do cabeçário */
 header {
-  /* font-size: 100pt; */
-  /* background-color: greenyellow; */
+  background-image: url(https://img.freepik.com/free-vector/cartoon-forest-background-nature-park-landscape_107791-2040.jpg);
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 60pt;
+  font-family: "corbel black";
+  text-align: center;
+  background: rgb(247, 244, 244, 0.6);
+}
+
+/* Formatação da barra de navegação */
+nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: rgb(113, 168, 121);
+}
+
+nav a {
+  color: #fff;
+  margin: auto 20px auto 40px;
+  text-decoration: none;
+  font-size: 15pt;
+  font-family: "corbel";
+  /* font-weight: bold; */
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-left: 20px;
+}
+
+/* Formatação do conteúdo */
+
+/* Formatação do início */
+main {
+  padding: 30px;
+}
+
+main {
+  margin: 10px;
+  width: 80%;
+  /*Para alinar um objeto ao centro você pode usar margin-left & margin-right auto para os dois*/
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Corbel";
+  font-size: 12pt; /*Tamanho da letra*/
+  /*Espaçamento entre linhas com o comando line-height*/
+  line-height: 30px;
+}
+
+.titulos {
+  font-size: 25pt;
+  font-family: "verdana";
 }
 
 #imghome img {
