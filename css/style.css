@@ -3,42 +3,70 @@
   margin: 0px; /*Margem externa das caixas*/
   padding: 0px; /*Margem interna das caixas*/
   box-sizing: border-box; /* Ajuste de padding das caixas sem a asoma com a largura*/
+  /* background-color: rgba(143, 170, 143, 0.22); */
 }
 
 /* Formatação do cabeçário */
 header {
   background-image: url(https://img.freepik.com/free-vector/cartoon-forest-background-nature-park-landscape_107791-2040.jpg);
-  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+hr {
+  border-width: 0;
+  height: 1px;
+  border-top-width: 1px;
+  border-color: rgba(0, 0, 0, 0.522);
 }
 
 h1 {
   font-size: 60pt;
-  font-family: "corbel black";
+  font-family: "Ink Free";
   text-align: center;
-  background: rgb(247, 244, 244, 0.6);
+  background: rgba(245, 240, 240, 0.72);
 }
 
 /* Formatação da barra de navegação */
 nav {
-  width: 100%;
-  display: flex;
+  background-color: rgb(103, 151, 31);
+  top: 95px;
+  padding: 3px;
+  text-align: center;
   position: fixed;
-  background-color: rgb(113, 168, 121);
+  width: 100%;
+  transition: ease 0.3s;
 }
 
-nav a {
+nav ul li {
+  display: inline-block; /* Dispor elementos em linha */
+  margin: 5px; /*Espaço em links*/
+}
+
+nav ul li a {
+  padding: 5px;
   color: #fff;
-  margin: auto 20px auto 40px;
+  font-family: "Corbel";
   text-decoration: none;
-  font-size: 15pt;
-  font-family: "corbel";
-  /* font-weight: bold; */
+  font-size: 13pt;
+  font-weight: bold;
 }
 
-nav li {
-  float: left;
-  list-style: none;
-  margin-left: 20px;
+nav ul li a:hover {
+  cursor: pointer;
+  transition: ease 0.3s;
+  color: black;
+}
+
+/* Formatação do rodapé */
+footer {
+  background-color: rgba(103, 151, 31, 0.46);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 /* Formatação do conteúdo */
@@ -46,27 +74,41 @@ nav li {
 /* Formatação do início */
 main {
   padding: 30px;
-}
-
-main {
-  margin: 10px;
+  margin: 150px;
   width: 80%;
-  /*Para alinar um objeto ao centro você pode usar margin-left & margin-right auto para os dois*/
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  font-family: "Corbel";
-  font-size: 12pt; /*Tamanho da letra*/
-  /*Espaçamento entre linhas com o comando line-height*/
-  line-height: 30px;
 }
 
 .titulos {
-  font-size: 25pt;
-  font-family: "verdana";
+  font-size: 40pt;
+  font-family: "Candara";
+  margin: 15px;
+  text-align: center;
+}
+
+.conteudo {
+  margin-top: 20px;
+  font-size: 17pt;
+  font-family: "corbel light";
+  text-align: justify;
+}
+
+#imghome {
+  text-align: right;
+  margin-top: 25px;
 }
 
 #imghome img {
   width: 40%;
   height: auto;
+  border-radius: 100%;
+  transition: ease 3s;
 }
+
+#imghome img:hover {
+  transform: scale(1.15);
+  transform: rotate(360deg);
+}
+
+/* Fim da formatação do início */
+
+/* Início da formatação dos contos */
